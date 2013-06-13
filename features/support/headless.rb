@@ -2,7 +2,7 @@ if ENV['BUILD_NUMBER'].present?
   require 'headless'
   require 'selenium-webdriver'
  
-  headless = Headless.new(display: 99)
+  headless = Headless.new(display: 100)
   headless.start
  
   at_exit do
