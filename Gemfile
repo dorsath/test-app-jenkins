@@ -27,6 +27,7 @@ group :test do
   gem 'rspec-rails'
   gem 'spinach-rails'
   gem 'capybara'
+  gem 'headless'
 end
 
 # To use ActiveModel has_secure_password
