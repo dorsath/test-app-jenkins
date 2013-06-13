@@ -7,4 +7,7 @@ if ENV['BUILD_NUMBER'].present?
   at_exit do
     headless.destroy
   end
+
+  Capybara.javascript_driver = :headless
+
 end
