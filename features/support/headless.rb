@@ -1,5 +1,6 @@
 if ENV['BUILD_NUMBER'].present?
   require 'headless'
+  require 'selenium-webdriver'
  
   headless = Headless.new
   headless.start
@@ -8,6 +9,6 @@ if ENV['BUILD_NUMBER'].present?
     headless.destroy
   end
 
-  Capybara.javascript_driver = :headless
+  #Capybara.javascript_driver = :selenium
 
 end
